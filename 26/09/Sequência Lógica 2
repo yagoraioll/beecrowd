@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+    Scanner leia = new Scanner(System.in);
+        
+        int X = leia.nextInt();
+        int Y = leia.nextInt();
+        
+        int contador = 1;
+        
+        for (int i = 1; i <= Y; i++) {
+            System.out.print(contador);
+            if (i % X == 0) {
+                System.out.println();
+            } else {
+                System.out.print(" ");
+            }
+            contador++;
+        }
+    }
+}
